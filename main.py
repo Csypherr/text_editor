@@ -20,9 +20,11 @@ def change_color():
     color = colorchooser.askcolor(title="pick a color...or else")
     text_area.config(fg=color[1])
 
+
 def change_font(*args):
     """Change the font type."""
     text_area.config(font=(font_name.get(), size_box.get()))
+
 
 def new_file():
     """Create a new file for editing."""
@@ -69,7 +71,6 @@ def save_file():
             file.close() 
 
 
-
 def cut():
     """Remove a selected text."""
     
@@ -92,6 +93,7 @@ def about():
     """Access and display information about the application."""
     
     showinfo("About this program", "Simple Text Editor.\n Version 0.1.0")
+
 
 def quit():
     """Exit the program."""
